@@ -6,12 +6,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserServiceImpl implements UserService {
     @Override
-    public void userRegistration() {
-        System.out.println("User registered successfully!");
+    public String userRegistration() {
+        return "User registered successfully!";
     }
 
     @Override
-    public void login() {
-        System.out.println("Logged in successfully!");
+    public String login() {
+       return "Logged in successfully!";
     }
 }
