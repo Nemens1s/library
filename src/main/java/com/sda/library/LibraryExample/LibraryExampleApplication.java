@@ -22,6 +22,8 @@ public class LibraryExampleApplication {
 		library.setNameOfLibrary("Keskraamatukogu");
 		library.setNumberOfBooks(1);
 		library.addBooksToLibrary(book);
+		library.getUserService().login();
+		library.getUserService().userRegistration();
 
 		System.out.println(library.toString());
 
