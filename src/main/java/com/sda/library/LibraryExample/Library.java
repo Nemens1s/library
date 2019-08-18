@@ -22,6 +22,13 @@ public class Library {
         this.userService = userService;
     }
 
+    public String login(){
+        return userService.login();
+    }
+    public String register(){
+        return userService.userRegistration();
+    }
+
     public void addBooksToLibrary(Book book){
         this.listOfBooks = new ArrayList<>();
         this.listOfBooks.add(book);
